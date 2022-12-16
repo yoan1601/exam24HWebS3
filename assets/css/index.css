@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#titre{
+    font-family: Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
+    font-size: 8rem;
+    text-align: center;
+    letter-spacing: 5px;
+}
+#contenu{
+    display: flex;
+    flex-direction: row;
+}
+#gauche{
+    margin-left: 10vw;
+    margin-right: 5vw;
+    z-index: 1;
+}
+#droite{
+    margin-left: 5vw;
+    margin-right: 10vw;
+}
+form{
+    box-shadow: 5px 5px 10px rgb(82, 80, 80);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 35vw;
+    height: 50vh;
+}
+input, label{
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    height: 5vh;
+}
+input{
+    margin-top: 3vh;
+    border-radius: 5px;
+    border: 1px solid ;
+}
+label{
+    font-size: xx-large;
+    line-height: 3rem;
+}
+#submit{
+    width: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#error{
+    text-align: center;
+    z-index: 5;
+    transform: translateY(-13vh);
+    color: red;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

@@ -1,0 +1,28 @@
+body{
+    font-size: x-large;
+}
+#titre{
+    font-family: Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
+    font-size: 4rem;
+    text-align: center;
+    letter-spacing: 5px;
+}
+form{
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    border-radius: 5px;
+}
+input, label{
+    width: 15rem;
+    height: 5vh;
+    margin-top: 3vh;
+    text-align: center;
+}
+#submit{
+    width: 10vw;
+}

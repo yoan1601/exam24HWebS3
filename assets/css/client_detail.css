@@ -1,0 +1,74 @@
+body{
+    padding: 0;
+    margin: 0;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    background-color: whitesmoke;
+}
+#titre{
+    font-family: Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+#descri{
+    font-size: large;
+    letter-spacing: 2px;
+}
+#contain{
+    display: flex;
+    flex-direction: row;
+}
+#gauche, #droite{
+    width: 42.5vw;
+    height: 70vh;
+}
+#gauche{
+    margin-right: 2.5vw;
+}
+#gauche img{
+    width: 42.5vw;
+    height: 70vh;
+}
+#droite{
+    margin-left: 2.5vw;
+}
+#haut, #bas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#haut img, #bas img{
+    width: 18.7vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#bas{
+    margin-top: 10vh;
+}
+#last{
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5vh;
+}
+#last div{
+    width: 30vw;
+    border: 1px solid black;
+}
+#right{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30vw;
+}
+#retour{
+    text-align: center;
+    margin-top: 2vh;
+}
+a{
+    text-decoration: none;
+    color: black;
+}

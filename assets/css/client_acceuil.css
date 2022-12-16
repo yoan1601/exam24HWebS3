@@ -1,0 +1,10 @@
+body {
+    width: 80vw;
+    margin: 80px auto;
+}
+
+#recherche {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
