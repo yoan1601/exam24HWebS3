@@ -1,8 +1,9 @@
 <?php
 session_start();
 include('../inc/fonction.php');
-$idtype = 2;
-$habit = getAllHabitat($idtype);
+// $idtype = 2;
+// $habit = getAllHabitat($idtype);
+$habit = getAllHabitats();
 if(isset($_GET['recherche'])) {
     $habit = search($_GET['recherche']);
 }
@@ -19,6 +20,16 @@ if(isset($_GET['recherche'])) {
 </head>
 
 <body>
+    <section id="menu">
+        <div id="logo">
+            <div id="trano">Tranok'</div>
+            <div id="ala">ala</div>
+            <div id="logosary"><img src="../images/logo.jpg"alt></div>
+        </div>
+        <div id="list">
+            <div id="deco"><a href="deconnexion.php">deconnexion</a></div>
+        </div>
+    </section>
     <section id="recherche">
         <div id="search">
             <form action="#" method="get">
@@ -26,7 +37,6 @@ if(isset($_GET['recherche'])) {
                 <input type="submit" value="chercher">
             </form>
         </div>
-        <div id="deco"><a href="deconnexion.php">Se deconnecter</a> </div>
     </section>
     <section id="content">
         <div id="all">
@@ -41,7 +51,13 @@ if(isset($_GET['recherche'])) {
                             <div id="sary"><img src="../<?php echo ($photo->repertoire); ?>" alt=""></div>
                             <div id="lettre">
                                 <p>
-                                    <?php echo ($habitation->nom . " " . $habitation->quartier . " " . $habitation->loyer); ?>
+                                    <?php echo ($habitation->nom); ?>
+                                </p>
+                                <p>
+                                    <?php echo ($habitation->quartier); ?>
+                                </p>
+                                <p>
+                                    <?php echo ($habitation->loyer); ?> euros
                                 </p>
                             </div>
                         </a>
@@ -50,7 +66,14 @@ if(isset($_GET['recherche'])) {
             <?php } ?>
         </div>
     </section>
-
+    <section id="footer">
+        <div id="copyright"><em>copyright 2022</em></div>
+        <div id="etu">
+            <div>ETU1819</div>
+            <div>ETU1892</div>
+            <div>ETU1793</div>
+        </div>
+    </section>
 </body>
 
 </html>

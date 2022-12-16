@@ -1,6 +1,6 @@
 body{
     padding: 0;
-    margin: 0;
+    margin: 5%;
     margin-left: 5vw;
     margin-right: 5vw;
     background-color: whitesmoke;
@@ -10,6 +10,9 @@ body{
     font-size: 1.5rem;
     font-weight: bolder;
     letter-spacing: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 #descri{
     font-size: large;
@@ -54,19 +57,50 @@ body{
     display: flex;
     flex-direction: row;
     margin-top: 5vh;
+    justify-content: space-between;
 }
-#last div{
-    width: 30vw;
-    border: 1px solid black;
-}
+
 #right{
     display: flex;
     flex-direction: column;
-    margin-left: 30vw;
+    border: 1px solid black;
+    width: 25vw;
+    height: 40vh;
+    justify-content: space-evenly;
+    border-radius: 20px;
 }
+
+#right #prix {
+    margin-left: 10%;
+}
+
+#right #daty,#right #submit {
+    margin: 0 auto;
+}
+
+#right #daty {
+    display: flex;
+    flex-direction: row;
+}
+
+#right #daty .arrivee,#right #daty .depart {
+    border: 1px solid gray;
+    width: 11vw;
+}
+
+#right #daty .arrivee #champ,#right #daty .depart #champ {
+    margin: 0 auto;
+    width: min-content;
+}
+
+#right #daty .arrivee #champ input, #right #daty .depart #champ input  {
+    border: transparent;
+}
+
 #retour{
     text-align: center;
     margin-top: 2vh;
+    font-size: x-large;
 }
 a{
     text-decoration: none;

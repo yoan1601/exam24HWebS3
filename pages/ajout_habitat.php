@@ -16,24 +16,27 @@ $allCategories = getAllCategories();
 </head>
 
 <body>
-    <section>
+    <section id="ajout">
         <div id="titre">
             Ajouter une habitation
         </div>
         <form action="insertionHabitat.php" method="post">
-            <select name="type" required>
-                <?php foreach ($allCategories as $categorie) { ?>
-                <option value="<?php echo ($categorie->id); ?>">
-                    <?php echo ($categorie->nomcategorie); ?>
-                </option>
-                <?php } ?>
-            </select>
-            <input type="number" name="nbChambre" id="chambres" min="1" placeholder="nombre de chambres" required>
-            <input type="number" name="loyer" id="loyer" min="0" placeholder="loyer" required>
-            <input type="text" name="desc" placeholder="Description" required>
-            <input type="text" name="quartier" placeholder="Quartier" required>
-            <label>Pour la photo a la une</label>
-            <div class="titre">
+            <div>
+                <select name="type" required>
+                    <?php foreach ($allCategories as $categorie) { ?>
+                    <option value="<?php echo ($categorie->id); ?>">
+                        <?php echo ($categorie->nomcategorie); ?>
+                    </option>
+                    <?php } ?>
+                </select>
+            </div>
+            <div><input type="text" name="nom" id="nom" placeholder="nom" required></div>
+            <div><input type="number" name="nbChambre" id="chambres" min="1" placeholder="nombre de chambres" required></div>
+            <div><input type="number" name="loyer" id="loyer" min="0" placeholder="loyer" required></div>
+            <div><input type="text" name="desc" placeholder="Description" required></div>
+            <div><input type="text" name="quartier" placeholder="Quartier" required></div>
+            <!-- <label>Pour la photo a la une</label> -->
+            <div class="champs">
                 <select name="sary1" required>
                     <?php
                     for ($i = 0; $i < count($listeImg); $i++) {

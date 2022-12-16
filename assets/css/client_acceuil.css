@@ -8,3 +8,111 @@ body {
     flex-direction: row;
     justify-content: space-between;
 }
+
+#all {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: max-content;
+    justify-content: space-evenly;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+#iray {
+    width: 20vw;
+    height: 50vh;
+    margin: 20px 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray ;
+}
+
+#iray #lettre {
+    text-align: center;
+}
+
+#iray img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+#kely {
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#kely:hover {
+    transition: 1s;
+    background-color: gold;
+}
+
+/* #menu #list {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+} */
+
+/* logo */
+#trano, #ala {
+    margin-top: -3%;
+ }
+ 
+ #trano{
+     float: left;
+     font-size: 28px;
+     font-family: system-ui;
+     font-weight: bold;
+ }
+ #ala {   
+     float: left;
+     font-size: 34px;
+     color: mediumseagreen;
+ }
+ 
+ #logosary img{
+     margin-top: -4%;
+     width: 47px;
+ }
+
+ #logo {
+    width: 50%;
+    height: 100%;
+ }
+ /* logo */
+
+ #menu, #footer {
+    padding-left: 6%;
+    border: solid 1px gray;
+    height: 10vh;
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 2%;
+    height: 5vh;
+}
+
+#footer {
+    color: gold;
+    margin-top: 5%;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    background: linear-gradient(135deg, black 80%, mediumseagreen 50% );
+}
+
+#etu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}

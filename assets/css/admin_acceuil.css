@@ -1,0 +1,150 @@
+body {
+    width: 80vw;
+    margin: 80px auto;
+}
+
+/* logo */
+#trano, #ala {
+   margin-top: -5%;
+}
+
+#trano{
+    float: left;
+    font-size: 28px;
+    font-family: system-ui;
+    font-weight: bold;
+}
+#ala {   
+    float: left;
+    font-size: 34px;
+    color: mediumseagreen;
+}
+
+#logosary img{
+    margin-top: -6%;
+    width: 47px;
+}
+/* logo */
+
+#menu, #footer {
+    padding-left: 6%;
+    border: solid 1px gray;
+    height: 10vh;
+}
+
+#menu {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding-top: 2%;
+    height: 5vh;
+}
+
+#footer {
+    color: gold;
+    margin-top: 5%;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    background: linear-gradient(135deg, black 80%, mediumseagreen 50% );
+}
+
+#etu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#add {
+    padding-left: 6%;
+}
+
+#menu #list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+a {
+    text-decoration: none;
+}
+
+#recherche {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#all {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: max-content;
+    justify-content: space-evenly;
+}
+
+#iray {
+    width: 20vw;
+    height: 50vh;
+    margin: 20px 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray ;
+}
+
+#iray #lettre {
+    text-align: center;
+}
+
+#iray img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+/* #sary {
+    display: flex;
+    flex-direction: row-reverse;
+} */
+
+#kely {
+    font-size: xx-large;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: white;
+    color: black;
+    height: max-content;
+    width: max-content;
+    transform: translateY(25px);
+}
+
+#fonction {
+    transform: translateY(18px);
+    color: black;
+    background-color: white;
+    /* display: none; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#fonction div {
+    width: 50%;
+    text-align: center;
+}
+
+#fonction div a {
+    color: black;
+}
+
+#supprimer:hover {
+    color: white;
+    transition: 0.5s;
+    background-color: rgb(249, 54, 54);
+}
+
+#modif:hover {
+    color: white;
+    transition: 0.5s;
+    background-color: rgb(54, 125, 249);
+}

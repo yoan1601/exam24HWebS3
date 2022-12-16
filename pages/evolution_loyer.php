@@ -37,7 +37,7 @@
 <body>
     <section>
     <div id="haut">
-        <div id="titre"><h2>Evolution du nombre d'habitation par jour</h2>
+        <div id="titre"><h2>Evolution du montant des loyers par jour</h2>
     </div>
     <form action="#" method="get">
         <select name="mois">

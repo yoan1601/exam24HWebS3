@@ -7,6 +7,7 @@
     $loyer = $_POST['loyer'];
     $description = $_POST['description'];
     $quartier = $_POST['quartier'];
-    modifier($idhabitat, $type, $nbchambre, $loyer, $quartier, $description);
-    header("location:client_acceuil.php");
+    $nom = $_POST['nom'];
+    modifier($idhabitat, $nom,$type, $nbchambre, $loyer, $quartier, $description);
+    header("location:admin_acceuil.php");
 ?>

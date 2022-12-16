@@ -2,19 +2,6 @@ create database immo;
 
 \c immo;
 
-
--- habitation : id, idCategorie, nb chambre, loyer, quartier, descri, idphoto a la une
--- photo : id, idhabitation, repertoire
--- utilisateur : id, email, nom, mdp, tel, isadmin
--- reservation : id, datearrivee, datedepart, idhabitation
--- categorie : id, nom
-
--- drop table habitation;
--- drop table photo;
--- drop table utilisateur;
--- drop table reservation;
--- drop table categorie;
-
 create table habitation (
     id serial primary key,
     nom VARCHAR,
@@ -284,33 +271,37 @@ create table reservation (
     idUtilisateur int
 );
 
-insert into reservation (datearrivee, datedepart, idhabitation) values ('2022-01-01', '2022-01-05', 1);
-insert into reservation (datearrivee, datedepart, idhabitation) values ('2022-02-03', '2022-02-08', 2);
-insert into reservation (datearrivee, datedepart, idhabitation) values ('2022-03-15', '2022-03-20', 3);
-insert into reservation (datearrivee, datedepart, idhabitation) values ('2022-04-15', '2022-04-20', 4);
-insert into reservation (datearrivee, datedepart, idhabitation) values ('2022-05-15', '2022-05-20', 5);
-insert into reservation (datearrivee, datedepart, idhabitation) values ('2022-06-15', '2022-06-20', 6);
-insert into reservation (datearrivee, datedepart, idhabitation) values ('2022-07-15', '2022-07-20', 7);
-insert into reservation (datearrivee, datedepart, idhabitation) values ('2022-01-15', '2022-01-20', 8);
-insert into reservation (datearrivee, datedepart, idhabitation) values ('2022-02-15', '2022-02-20', 9);
-insert into reservation (datearrivee, datedepart, idhabitation) values ('2022-03-15', '2022-03-20', 10);
-insert into reservation (datearrivee, datedepart, idhabitation) values ('2022-04-15', '2022-04-20', 11);
-insert into reservation (datearrivee, datedepart, idhabitation) values ('2022-05-15', '2022-05-20', 12);
-insert into reservation (datearrivee, datedepart, idhabitation) values ('2022-01-15', '2022-01-20', 13);
-insert into reservation (datearrivee, datedepart, idhabitation) values ('2022-02-15', '2022-02-20', 14);
-insert into reservation (datearrivee, datedepart, idhabitation) values ('2022-03-15', '2022-03-20', 15);
-insert into reservation (datearrivee, datedepart, idhabitation) values ('2022-04-15', '2022-04-20', 16);
-insert into reservation (datearrivee, datedepart, idhabitation) values ('2022-05-15', '2022-05-20', 17);
-insert into reservation (datearrivee, datedepart, idhabitation) values ('2022-08-15', '2022-08-20', 18);
-insert into reservation (datearrivee, datedepart, idhabitation) values ('2022-09-15', '2022-09-20', 19);
-insert into reservation (datearrivee, datedepart, idhabitation) values ('2022-10-15', '2022-10-20', 20);
-insert into reservation (datearrivee, datedepart, idhabitation) values ('2022-11-15', '2022-11-20', 21);
-insert into reservation (datearrivee, datedepart, idhabitation) values ('2022-04-15', '2022-04-20', 22);
-insert into reservation (datearrivee, datedepart, idhabitation) values ('2022-12-15', '2022-12-20', 23);
-insert into reservation (datearrivee, datedepart, idhabitation) values ('2022-09-15', '2022-09-20', 24);
-insert into reservation (datearrivee, datedepart, idhabitation) values ('2022-11-15', '2022-11-20', 25);
+insert into reservation (datearrivee, datedepart, idhabitation, idUtilisateur) values ('2022-12-14', '2022-12-20', 1, 1);
+insert into reservation (datearrivee, datedepart, idhabitation, idUtilisateur) values ('2022-02-02', '2022-02-05', 1, 2);
+insert into reservation (datearrivee, datedepart, idhabitation, idUtilisateur) values ('2022-03-03', '2022-03-10', 1, 3);
+insert into reservation (datearrivee, datedepart, idhabitation, idUtilisateur) values ('2022-04-01', '2022-04-05', 1, 4);
+insert into reservation (datearrivee, datedepart, idhabitation, idUtilisateur) values ('2022-05-01', '2022-06-05', 1, 5);
+insert into reservation (datearrivee, datedepart, idhabitation, idUtilisateur) values ('2022-02-03', '2022-02-08', 2, 1);
+insert into reservation (datearrivee, datedepart, idhabitation, idUtilisateur) values ('2022-03-15', '2022-03-20', 3, 2);
+insert into reservation (datearrivee, datedepart, idhabitation, idUtilisateur) values ('2022-04-15', '2022-04-20', 4, 3);
+insert into reservation (datearrivee, datedepart, idhabitation, idUtilisateur) values ('2022-05-15', '2022-05-20', 5, 4);
+insert into reservation (datearrivee, datedepart, idhabitation, idUtilisateur) values ('2022-06-15', '2022-06-20', 6, 5);
+insert into reservation (datearrivee, datedepart, idhabitation, idUtilisateur) values ('2022-07-15', '2022-07-20', 7, 1);
+insert into reservation (datearrivee, datedepart, idhabitation, idUtilisateur) values ('2022-01-15', '2022-01-20', 8, 2);
+insert into reservation (datearrivee, datedepart, idhabitation, idUtilisateur) values ('2022-02-15', '2022-02-20', 9, 3);
+insert into reservation (datearrivee, datedepart, idhabitation, idUtilisateur) values ('2022-03-15', '2022-03-20', 10, 4);
+insert into reservation (datearrivee, datedepart, idhabitation, idUtilisateur) values ('2022-04-15', '2022-04-20', 11, 5);
+insert into reservation (datearrivee, datedepart, idhabitation, idUtilisateur) values ('2022-05-15', '2022-05-20', 12, 1);
+insert into reservation (datearrivee, datedepart, idhabitation, idUtilisateur) values ('2022-01-15', '2022-01-20', 13, 2);
+insert into reservation (datearrivee, datedepart, idhabitation, idUtilisateur) values ('2022-02-15', '2022-02-20', 14, 3);
+insert into reservation (datearrivee, datedepart, idhabitation, idUtilisateur) values ('2022-03-15', '2022-03-20', 15, 4);
+insert into reservation (datearrivee, datedepart, idhabitation, idUtilisateur) values ('2022-04-15', '2022-04-20', 16, 5);
+insert into reservation (datearrivee, datedepart, idhabitation, idUtilisateur) values ('2022-05-15', '2022-05-20', 17, 1);
+insert into reservation (datearrivee, datedepart, idhabitation, idUtilisateur) values ('2022-08-15', '2022-08-20', 18, 2);
+insert into reservation (datearrivee, datedepart, idhabitation, idUtilisateur) values ('2022-09-15', '2022-09-20', 19, 3);
+insert into reservation (datearrivee, datedepart, idhabitation, idUtilisateur) values ('2022-10-15', '2022-10-20', 20, 4);
+insert into reservation (datearrivee, datedepart, idhabitation, idUtilisateur) values ('2022-11-15', '2022-11-20', 21, 5);
+insert into reservation (datearrivee, datedepart, idhabitation, idUtilisateur) values ('2022-04-15', '2022-04-20', 22, 1);
+insert into reservation (datearrivee, datedepart, idhabitation, idUtilisateur) values ('2022-12-15', '2022-12-20', 23, 2);
+insert into reservation (datearrivee, datedepart, idhabitation, idUtilisateur) values ('2022-09-15', '2022-09-20', 24, 3);
+insert into reservation (datearrivee, datedepart, idhabitation, idUtilisateur) values ('2022-11-15', '2022-11-20', 25, 4);
 
-update reservation set idUtilisateur = 1 where id = 1;
+update reservation set idUtilisateur = 1 where idhabitation = 1;
 update reservation set idUtilisateur = 2 where id = 2;
 update reservation set idUtilisateur = 3 where id = 3;
 update reservation set idUtilisateur = 4 where id = 4;

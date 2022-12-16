@@ -1,6 +1,7 @@
 <?php 
 
     include("../inc/fonction.php");
+    include("listeImg.php");
     $categorie = $_POST['type'];
     $nom = $_POST['nom'];
     $nbChambres = $_POST['nbChambre'];
@@ -13,7 +14,9 @@
     $descri = $_POST['desc'];
     $quartier = $_POST['quartier'];
 
-    insertHabitat($categorie, $nom, $nbChambres, $loyer, $quartier, $descri, $sary1);
+    $idImgAlaUne = getIdImg($sary1, $listeImg);
+
+    insertHabitat($categorie, $nom, $nbChambres, $loyer, $quartier, $descri, $idImgAlaUne);
     $allHabitats = getAllHabitats();
     $thisHabitat = $allHabitats[count($allHabitats) - 1];
     insertPhoto($sary1, $thisHabitat->id);

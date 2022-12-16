@@ -26,7 +26,8 @@ $idhabitat = $_GET['idHabitat'];
         $photo = getPhoto($habitation->idphotoalaune);
         ?>
         <div id="titre">
-            <?php echo ($habitation->nom . " " . $habitation->quartier); ?>
+            <div><?php echo ($habitation->nom . " " . $habitation->quartier); ?></div>
+            <div id="deco"><a href="deconnexion.php">Se deconnecter</a></div>
         </div>
         <div id="descri">
             <?php echo ($habitation->descri); ?>
@@ -63,17 +64,29 @@ $idhabitat = $_GET['idHabitat'];
         </div>
         <div id="right">
             <div id="prix">
-                <?php echo ($habitation->loyer); ?> par nuit
+               <strong><?php echo ($habitation->loyer); ?> euro</strong> la nuit
             </div>
             <div id="daty">
-                <input type="date" name="arrivee">
-                <input type="date" name="depart">
+                <div class="arrivee">
+                    <div>Arrivée</div>
+                    <div id="champ">
+                    <input type="date" name="arrivee">
+                    </div>
+                </div>
+                <div class="depart">
+                    <div>Départ</div>
+                    <div id="champ">
+                    <input type="date" name="depart">
+                    </div>
+                </div>
             </div>
-            <input type="submit" value="Reserver">
+            <div id="submit">
+                <input type="submit" value="Reserver">
+            </div>
         </div>
     </section>
     <section id="retour">
-        <a href="client_accueil.php">Retour</a>
+        <a href="client_acceuil.php">Retour</a>
     </section>
 </body>
 

@@ -1,6 +1,12 @@
 body{
     font-size: x-large;
 }
+#ajout {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
 #titre{
     font-family: Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
     font-size: 4rem;
@@ -12,7 +18,8 @@ form{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    height: 100%;
 }
 input{
     border-radius: 5px;

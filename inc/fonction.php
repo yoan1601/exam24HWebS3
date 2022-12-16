@@ -191,10 +191,10 @@ function insertPhoto($rep, $idhabitat){
     $insert = $connexion->exec($sql);
 }
 
-function modifier($idhabitat, $idtype, $nbChambre, $loyer, $quartier, $descri){
+function modifier($idhabitat, $nom,$idtype, $nbChambre, $loyer, $quartier, $descri){
     $connexion = getConnexionPostGres();
-    $format = "update habitation set idCategorie = %g, nbChambre = %g, loyer = %g, quartier = '%s', descri = '%s' where id = %g";
-    $sql = sprintf($format, $idtype, $nbChambre, $loyer, $quartier, $descri, $idhabitat);
+    $format = "update habitation set nom='%s', idCategorie = %g, nbChambre = %g, loyer = %g, quartier = '%s', descri = '%s' where id = %g";
+    $sql = sprintf($format, $nom,$idtype, $nbChambre, $loyer, $quartier, $descri, $idhabitat);
     // echo($sql);
     $insert = $connexion->exec($sql);    
 }
@@ -204,17 +204,17 @@ function supprimer($idhabitat){
 
     $format = " delete from photo where idhabitation = %g";
     $sql = sprintf($format, $idhabitat);
-    // echo($sql);
+    echo($sql);
     $delete = $connexion->exec($sql);
 
     $format = " delete from reservation where idhabitation = %g";
     $sql = sprintf($format, $idhabitat);
-    // echo($sql);
+    echo($sql);
     $delete = $connexion->exec($sql);
 
-    $format = " delete from habitation where idhabitation = %g";
+    $format = " delete from habitation where id = %g";
     $sql = sprintf($format, $idhabitat);
-    // echo($sql);
+    echo($sql);
     $delete = $connexion->exec($sql);
 }
 
@@ -227,7 +227,7 @@ function verifyLogin($email, $mdp){
     $rep->setFetchMode(PDO::FETCH_OBJ);
     $retour = $rep->fetch();
     $rep->closeCursor();
-    return $retour; //user / false
+    return $retour;
 }
 
 function getAllPhoto($idh){
@@ -339,20 +339,5 @@ function getMontantLoyerJour($date){
     $retour = $montant;
     $rep->closeCursor();
     // $retour = array(1, 6,23,54,13,123);
-    return $retour;
-}
-
-function getOccupaLogement($date){
-    $connexion = getConnexionPostGres();
-    // $connexion = ;
-    // $format = "";
-    // $sql = sprintf($format, $date);
-    // echo($sql);// 
-    // $rep = $connexion->query($sql);
-    // $rep->setFetchMode(PDO::FETCH_OBJ);
-    // $habitat=$rep->fetch();
-    // $retour = $habitat;
-    // $rep->closeCursor();
-    $retour = array(1, 6,23,54,13,123);
     return $retour;
 }
