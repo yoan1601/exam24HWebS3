@@ -1,3 +1,7 @@
+
+-- getNbHabitatDispoJour
+    gour
+
 -- getAllReservationByDate
 select * from reservation where '2022-04-16' between datearrivee and datedepart;
 

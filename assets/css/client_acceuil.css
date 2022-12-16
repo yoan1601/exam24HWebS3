@@ -1,12 +1,32 @@
 body {
     width: 80vw;
     margin: 80px auto;
+    background-image: url('../../images/26507.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#prix {
+    color: goldenrod;
+    font-style: italic;
 }
 
 #recherche {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 20px 5%;
+}
+
+#recherche #search #submit {
+    border: solid 1px gray;
+}
+
+#recherche #search #submit:hover {
+    transition: 1s;
+    background-color: mediumseagreen;
+    color : white;
 }
 
 #all {
@@ -41,12 +61,20 @@ a {
     height: 100%;
     background-position: center;
     background-size: cover;
+    background-color: white;
+}
+
+#iray:hover {
+    transition: 2s;
+    height: 30%;
+    width: 30%;
 }
 
 #kely {
     text-align: center;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    background-color: white;
 }
 
 #kely:hover {
@@ -54,11 +82,9 @@ a {
     background-color: gold;
 }
 
-/* #menu #list {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-} */
+#menu #list a:hover {
+    color: goldenrod;
+}
 
 /* logo */
 #trano, #ala {
@@ -100,6 +126,10 @@ a {
     justify-content: space-evenly;
     padding-top: 2%;
     height: 5vh;
+    background-color: white;
+    border: solid 1px goldenrod;
+    border-radius: 5px;
+    background: linear-gradient(-135deg, white 87%, rgb(229, 185, 75) 40% );
 }
 
 #footer {

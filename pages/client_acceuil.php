@@ -16,7 +16,7 @@ if(isset($_GET['recherche'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/client_acceuil.css">
-    <title>Admin Acceuil</title>
+    <title>Client Acceuil</title>
 </head>
 
 <body>
@@ -34,7 +34,7 @@ if(isset($_GET['recherche'])) {
         <div id="search">
             <form action="#" method="get">
                 <input type="text" name="recherche" id="champ" placeholder="description" required>
-                <input type="submit" value="chercher">
+                <input type="submit" value="chercher" id="submit">
             </form>
         </div>
     </section>
@@ -56,7 +56,7 @@ if(isset($_GET['recherche'])) {
                                 <p>
                                     <?php echo ($habitation->quartier); ?>
                                 </p>
-                                <p>
+                                <p id="prix">
                                     <?php echo ($habitation->loyer); ?> euros
                                 </p>
                             </div>

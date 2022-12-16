@@ -72,10 +72,10 @@ create table photo (
 );
 
 insert into photo (idhabitation, repertoire) values (1, 'images\maison1.PNG');
-insert into photo (idhabitation, repertoire) values (1, 'images\maison1.PNG');
-insert into photo (idhabitation, repertoire) values (1, 'images\maison1.PNG');
-insert into photo (idhabitation, repertoire) values (1, 'images\maison1.PNG');
-insert into photo (idhabitation, repertoire) values (1, 'images\maison1.PNG');
+insert into photo (idhabitation, repertoire) values (1, 'images\maison1.jpg');
+insert into photo (idhabitation, repertoire) values (1, 'images\studio1.jpg');
+insert into photo (idhabitation, repertoire) values (1, 'images\studioout1.jpg');
+insert into photo (idhabitation, repertoire) values (1, 'images\interieur1.jpg');
 
 insert into photo (idhabitation, repertoire) values (2, 'images\maison2.PNG');
 insert into photo (idhabitation, repertoire) values (2, 'images\maison2.PNG');

@@ -1,7 +1,59 @@
 body{
-    margin: 0;
+    margin: 10% auto;
     padding: 0;
 }
+
+#content {
+    margin: 3% auto;
+}
+
+/* logo */
+#trano, #ala {
+    margin-top: -3%;
+ }
+ 
+ #trano{
+     float: left;
+     font-size: 28px;
+     font-family: system-ui;
+     font-weight: bold;
+ }
+ #ala {   
+     float: left;
+     font-size: 34px;
+     color: mediumseagreen;
+ }
+ 
+ #logosary img{
+     margin-top: -92%;
+     width: 70px;
+ }
+
+ #logo {
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+ }
+
+ #trano {
+    transform: translateX(48px);
+ }
+
+ #ala {
+    transform: translateX(-27px);
+ }
+
+ #logosary {
+    transform: translate(-120px);
+ }
+
+ #header {
+    width: 100%;
+ }
+ /* logo */
+ 
 #titre{
     font-family: Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
     font-size: 8rem;
@@ -28,6 +80,7 @@ form{
     border-radius: 10px;
     width: 35vw;
     height: 50vh;
+    justify-content: center;
 }
 input, label{
     width: 15rem;

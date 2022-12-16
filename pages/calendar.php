@@ -31,7 +31,7 @@
                     // }
                     <?php echo($allOccupations); ?>
                 ],
-                eventColor: 'bluesky'
+                eventColor: 'goldenrod'
             });
             calendar.render();
         });

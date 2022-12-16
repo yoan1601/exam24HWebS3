@@ -33,20 +33,22 @@
 </head>
 
 <body>
-    <section>
-        <div id="titre">
-            Tranok'ala
+    <section id="header">
+        <div id="logo">
+            <div id="trano">Tranok'</div>
+            <div id="ala">ala</div>
+            <div id="logosary"><img src="./images/logo.jpg"alt></div>
         </div>
     </section>
-    <section>
+    <section id="content">
 
         <div id="contenu">
             <div id="gauche">
-                <form action="#" method="post">
-                    <label>Se connecter</label>
-                    <input type="text" name="email" placeholder="email" required>
-                    <input type="password" name="password" placeholder="mot de passe" required>
-                    <input id="submit" type="submit" value="Se connecter">
+                <form action="#" method="post" id=form>
+                    <div><label>Se connecter</label></div>
+                    <div><input type="text" name="email" placeholder="email" required></div>
+                    <div><input type="password" name="password" placeholder="mot de passe" required></div>
+                    <div><input id="submit" type="submit" value="Se connecter"></div>
                 </form>
                 <?php if(isset($error)) { ?>
                 <div id="error">
